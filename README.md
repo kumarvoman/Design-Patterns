@@ -11,3 +11,6 @@ and you don't wanna miss your chance .. right ??
 
 Also, along with the given design pattern i'll add some of the questions that you might get as a counter of writing correct code.
 So don't worry and stay tuned :)
+
+2. Observer Design Pattern
+   
