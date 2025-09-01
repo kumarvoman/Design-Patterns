@@ -1,6 +1,34 @@
 # Design-Patterns
 How to code each design pattern in C++ language.
 
+Creational Design Pattern - 
+1. Singleton
+2. Builder
+3. Prototype
+4. Factory
+5. Abstract Factory
+6. Dependency Injection Pattern.
+
+Structural Design Patterns
+1. Adapter
+2. Bridge
+3. Composite
+4. Decorator
+5. Facade
+6. Proxy
+7. Flyweight
+
+Behavioral Design Pattern
+1. Chain of Reponsibility
+2. Command
+3. Iterator
+4. Mediator
+5. Memento
+6. Observer
+7. State
+8. Strategy
+9. Visitor
+
 1. The first one is obviously - Singleton
 
 Why ??
