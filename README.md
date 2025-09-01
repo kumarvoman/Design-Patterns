@@ -28,7 +28,9 @@ Behavioral Design Pattern
 7. State
 8. Strategy
 9. Visitor
+--------------------------------------------------------------
 
+<h1>Creational Design Patterns</h1>
 1. The first one is obviously - Singleton
 
 Why ??
@@ -40,5 +42,9 @@ and you don't wanna miss your chance .. right ??
 Also, along with the given design pattern i'll add some of the questions that you might get as a counter of writing correct code.
 So don't worry and stay tuned :)
 
-2. Observer Design Pattern
-   
+<h1>Structural Design Patterns</h1>
+
+
+
+<h1>Behavioral Design Patterns</h1>
+6. Observer Design Pattern
