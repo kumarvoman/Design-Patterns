@@ -30,8 +30,27 @@ Behavioral Design Pattern
 9. Visitor
 --------------------------------------------------------------
 
+When to Pick which design pattern
+<h3>Creational Patterns</h3>
+<ul> Singleton: Use when you need to ensure that only one instance of a class exists throughout the system.</ul>
+<ul> Factory Method: Use when you want to create objects but defer the instantiation to subclasses, which helps encapsulate creation logic.</ul>
+<ul> Prototype: Use when object creation is complex or costly, as it allows you to create new objects by copying an existing one. </ul>
+
+<h3>Structural Patterns</h3>
+<ul> Choose Decorator for dynamically adding responsibilities to objects without altering their original interface.</ul>
+<ul> Choose Adapter for adapting an object's interface to be compatible with a client that expects a different one.</ul>
+<ul> Choose Composite for representing a part-whole hierarchy where you need to treat individual objects and compositions of objects uniformly.</ul>
+<ul> Choose Strategy when you want to swap out an algorithm at runtime, which is a different concept than adding behavior to an object.</ul>
+<ul> Choose Facade to provide a simpler, single-point entry into a complex subsystem. </ul>
+
+<h3>Behavioral Patterns</h3>
+<ul> Strategy: Use when you have multiple algorithms that can perform the same task and you want to allow the client to choose one at runtime.</ul>
+<ul> Observer: Use to establish a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.</ul>
+<ul> State: Use when an object's behavior needs to change based on its internal state, allowing the object to change its behavior without altering its class. </ul>
+
+
 <h1>Creational Design Patterns</h1>
-1. The first one is obviously - Singleton
+1. The first one is obviously - Singleton - https://github.com/kumarvoman/Design-Patterns/blob/main/Singleton.hpp
 
 Why ??
 Coz this will be asked in almost each and every interview you get, doesn't matter if the company is product based or service based.
@@ -44,7 +63,8 @@ So don't worry and stay tuned :)
 
 <h1>Structural Design Patterns</h1>
 
+Decorator Pattern - https://github.com/kumarvoman/Design-Patterns/blob/main/Decorator.hpp
 
 
 <h1>Behavioral Design Patterns</h1>
-6. Observer Design Pattern
+6. Observer Design Pattern - https://github.com/kumarvoman/Design-Patterns/blob/main/Observer.hpp
