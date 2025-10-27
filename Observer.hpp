@@ -5,6 +5,26 @@
 #include <memory>
 
 /*
+------------------------------
+Observer pattern : Behavioral
+------------------------------
+It is used, whenever you want to notify interested parties that something has happened. 
+The Observer pattern is particularly valuable in event-driven architectures and reactive programming
+E.g. Whenever a new post is added, all the subscriber gets a mail
+
+When To Use:
+Loose Coupling: Subject doesn't need to know observer details
+Dynamic Relationships: Add/remove observers at runtime
+Broadcast Communication: One-to-many notifications
+Open/Closed Principle: Easy to add new observers without modifying existing code
+
+When NOT to use:
+Simple one-to-one relationships
+Performance-critical code with many observers
+When notification order matters
+Tight coupling is acceptable/preferred
+
+
 This implementation includes:
 
 Key Components:
