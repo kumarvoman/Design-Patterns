@@ -2,7 +2,7 @@
 How to code each design pattern in C++ language.
 
 Creational Design Pattern - 
-1. Singleton
+1. Singleton - https://github.com/kumarvoman/Design-Patterns/blob/main/Singleton.hpp
 2. Builder
 3. Prototype
 4. Factory
@@ -13,7 +13,7 @@ Structural Design Patterns
 1. Adapter
 2. Bridge
 3. Composite
-4. Decorator
+4. Decorator - https://github.com/kumarvoman/Design-Patterns/blob/main/Decorator.hpp
 5. Facade
 6. Proxy
 7. Flyweight
@@ -24,7 +24,7 @@ Behavioral Design Pattern
 3. Iterator
 4. Mediator
 5. Memento
-6. Observer
+6. Observer - https://github.com/kumarvoman/Design-Patterns/blob/main/Observer.hpp
 7. State
 8. Strategy
 9. Visitor
@@ -47,24 +47,3 @@ When to Pick which design pattern
 <ul> Strategy: Use when you have multiple algorithms that can perform the same task and you want to allow the client to choose one at runtime.</ul>
 <ul> Observer: Use to establish a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.</ul>
 <ul> State: Use when an object's behavior needs to change based on its internal state, allowing the object to change its behavior without altering its class. </ul>
-
-
-<h1>Creational Design Patterns</h1>
-1. The first one is obviously - Singleton - https://github.com/kumarvoman/Design-Patterns/blob/main/Singleton.hpp
-
-Why ??
-Coz this will be asked in almost each and every interview you get, doesn't matter if the company is product based or service based.
-bigger mnc or a just few ppl startup.
-coz at the end of the day-how good you can code is all that matters.
-and you don't wanna miss your chance .. right ??
-
-Also, along with the given design pattern i'll add some of the questions that you might get as a counter of writing correct code.
-So don't worry and stay tuned :)
-
-<h1>Structural Design Patterns</h1>
-
-Decorator Pattern - https://github.com/kumarvoman/Design-Patterns/blob/main/Decorator.hpp
-
-
-<h1>Behavioral Design Patterns</h1>
-6. Observer Design Pattern - https://github.com/kumarvoman/Design-Patterns/blob/main/Observer.hpp
