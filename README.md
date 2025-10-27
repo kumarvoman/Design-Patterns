@@ -2,7 +2,7 @@
 How to code each design pattern in C++ language.
 
 Creational Design Pattern - 
-1. Singleton - https://github.com/kumarvoman/Design-Patterns/blob/main/Singleton.hpp
+1. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/Singleton.hpp">Singleton</a>
 2. Builder
 3. Prototype
 4. Factory
@@ -13,7 +13,7 @@ Structural Design Patterns
 1. Adapter
 2. Bridge
 3. Composite
-4. Decorator - https://github.com/kumarvoman/Design-Patterns/blob/main/Decorator.hpp
+4. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/Decorator.hpp">Decorator</a>
 5. Facade
 6. Proxy
 7. Flyweight
@@ -24,7 +24,7 @@ Behavioral Design Pattern
 3. Iterator
 4. Mediator
 5. Memento
-6. Observer - https://github.com/kumarvoman/Design-Patterns/blob/main/Observer.hpp
+6. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/Observer.hpp">Observer</a>
 7. State
 8. Strategy
 9. Visitor
