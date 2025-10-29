@@ -26,7 +26,7 @@ Behavioral Design Pattern
 5. Memento
 6. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/Observer.hpp">Observer</a>
 7. State
-8. Strategy
+8. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/Strategy.hpp">Strategy</a>
 9. Visitor
 --------------------------------------------------------------
 
