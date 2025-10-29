@@ -16,8 +16,112 @@ Features:
 - Combines Multiple Behaviors: Stack multiple decorators to create complex behavior
 - Adheres to Open/Closed Principle: New functionality can be added without modifying existing code
 
-UML Design Pattern Diagram:
-![UML Diagram](file:///Users/Voman.Kumar/Downloads/decorator.svg)
+/*UML Diagram
+┌───────────────────────────────-┐
+│          <<interface>>         │
+│            Coffee              │
+├───────────────────────────────-┤
+│ + getDescription(): string     │
+│ + getCost(): double            │
+└───────────────┬───────────────-┘
+                │       
+                │ implements    
+                │-------------------------------------------|
+┌───────────────▼───────────────-┐                  ┌───────▼────────────────────────┐
+|                                │                  │                                |  
+│       SimpleCoffee             │                  │      CoffeeDecorator           │
+│                                │                  │                                │
+│ + getDescription(): string     │                  │ - coffee: Coffee*              │
+│ + getCost(): double            │                  │ + getDescription(): string     │
+│                                │                  │ + getCost(): double            │
+│                                │                  │                                │
+└───────────────────-------------┘                  └───────────────────-------------┘
+                ▲                                       ▲                         ▲
+                │                                       │                         │
+                │                                       │                         │
+┌───────────────┴──────────────-------─┐    ┌───────────┴───────────────┐ ┌───────┴───────────────┐
+│         MilkDecorator                │    │     SugarDecorator        │ │     WhipDecorator     │ 
+├──────────────────────────────--------┤    ├───────────────────────────┤ ├───────────────────────┤ 
+│ + getDescription(): string           │    │ + getDescription(): string│ │ + getDescription():   │ 
+│ + getCost(): double                  │    │ + getCost(): double       │ │ + getCost(): double   │
+└───────────────────-------------------┘    └───────────────────────────┘ └───────────────────────┘    
+
+Sequence Diagram
+┌───────────────┐        ┌───────────────┐        ┌───────────────┐
+│    Client     │        │   Component   │        │   Decorator   │
+└───────────────┘        └───────────────┘        └───────────────┘
+        │                        │                      │
+        │   createComponent()    │                      │
+        │───────────────────────>│                      │
+        │                        │   operation()       <│
+        │                        │─────────────────────>│
+        │                        │                      │
+        │                        │   operation()       <│
+        │                        │<─────────────────────│
+        │                        │                      │
+        │   createDecorator()    │                      │
+        │───────────────────────>│                      │
+        │                        │   operation()        │
+        │                        │─────────────────────>│
+        │                        │                      │
+        │                        │   operation()        │
+        │                        │<─────────────────────│
+        │                        │                      │
+        │   createDecorator()    │                      │
+        │───────────────────────>│                      │
+        │                        │   operation()        │
+        │                        │─────────────────────>│
+        │                        │                      │
+        │                        │   operation()        │
+        │                        │<─────────────────────│
+        │                        │                      │
+        │                        │   createDecorator()  │
+        │                        │─────────────────────>│
+        │                        │                      │
+        │                        │   operation()       <│
+        │                        │─────────────────────>│
+        │                        │                      │
+        │                        │   operation()        │
+        │                        │<─────────────────────│
+        │                        │                      │   
+    └───────────────┘        └───────────────┘      └───────────────┘
+
+Sequence Diagram Explanation:
+- The client creates a component (SimpleCoffee) and calls operation() on it.
+- The client then creates a decorator (e.g., MilkDecorator) wrapping the component.
+- The client calls operation() on the decorator, which adds behavior before/after delegating to the component.
+- This process is repeated for additional decorators (e.g., SugarDecorator, WhipDecorator).
+- Each decorator maintains the same interface as the component, allowing seamless integration.
+- The client interacts with the decorated component transparently.
+- The decorator pattern allows dynamic addition of responsibilities
+    to individual objects without affecting other objects.
+    This is achieved by creating a set of decorator classes that are
+    used to wrap concrete components.
+
+    <<createDecorator()>>
+
+    │   Creates a decorator wrapping a component
+    │   Calls operation() on the decorator
+    │   The decorator adds behavior before/after delegating to the component
+    │   Multiple decorators can be stacked to combine behaviors
+    │   The client interacts with the decorated component transparently
+    │   The decorator pattern allows dynamic addition of responsibilities
+    │   to objects without modifying their code.
+    │   The decorator maintains the same interface as the component
+    │   allowing seamless integration.
+    
+    <<createComponent()>>
+
+    │   Creates a concrete component (e.g., SimpleCoffee)
+    │   Calls operation() on the component
+    │   The component performs its core behavior
+    │   The client interacts directly with the component
+    │   The decorator pattern allows dynamic addition of responsibilities
+    │   to objects without modifying their code.
+    │   The decorator maintains the same interface as the component
+    │   allowing seamless integration.  
+
+
 
 Where to use decorator pattern:
 - When you need to add responsibilities to individual objects dynamically and transparently, without affecting other objects
