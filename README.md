@@ -30,20 +30,28 @@ Behavioral Design Pattern
 9. Visitor
 --------------------------------------------------------------
 
-When to Pick which design pattern
+<h2>When to Pick which design pattern</h2>
 <h3>Creational Patterns</h3>
-<ul> Singleton: Use when you need to ensure that only one instance of a class exists throughout the system.</ul>
-<ul> Factory Method: Use when you want to create objects but defer the instantiation to subclasses, which helps encapsulate creation logic.</ul>
-<ul> Prototype: Use when object creation is complex or costly, as it allows you to create new objects by copying an existing one. </ul>
+<b>Singleton</b>: Use when you need to ensure that only one instance of a class exists throughout the system.
+
+<b>Factory</b>: Use when you want to create objects but defer the instantiation to subclasses, which helps encapsulate creation logic.
+
+<b>Prototype</b>: Use when object creation is complex or costly, as it allows you to create new objects by copying an existing one.
 
 <h3>Structural Patterns</h3>
-<ul> Choose Decorator for dynamically adding responsibilities to objects without altering their original interface.</ul>
-<ul> Choose Adapter for adapting an object's interface to be compatible with a client that expects a different one.</ul>
-<ul> Choose Composite for representing a part-whole hierarchy where you need to treat individual objects and compositions of objects uniformly.</ul>
-<ul> Choose Strategy when you want to swap out an algorithm at runtime, which is a different concept than adding behavior to an object.</ul>
-<ul> Choose Facade to provide a simpler, single-point entry into a complex subsystem. </ul>
+<b>Decorator</b>: for dynamically adding responsibilities to objects without altering their original interface.
+
+<b>Adapter</b>: for adapting an object's interface to be compatible with a client that expects a different one.
+
+<b>Composite</b>: for representing a part-whole hierarchy where you need to treat individual objects and compositions of objects uniformly.
+
+<b>Strategy</b>: when you want to swap out an algorithm at runtime, which is a different concept than adding behavior to an object.
+
+<b>Facade</b>: to provide a simpler, single-point entry into a complex subsystem.
 
 <h3>Behavioral Patterns</h3>
-<ul> Strategy: Use when you have multiple algorithms that can perform the same task and you want to allow the client to choose one at runtime.</ul>
-<ul> Observer: Use to establish a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.</ul>
-<ul> State: Use when an object's behavior needs to change based on its internal state, allowing the object to change its behavior without altering its class. </ul>
+<b>Strategy</b>: Use when you have multiple algorithms that can perform the same task and you want to allow the client to choose one at runtime.
+
+<b>Observer</b>: Use to establish a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+
+<b>State</b>: Use when an object's behavior needs to change based on its internal state, allowing the object to change its behavior without altering its class.
