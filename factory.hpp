@@ -84,20 +84,20 @@ Explanation:
 #include <string>
 
 // Factory Pattern Implementation
-class Product {
+class IProduct {
 public:
-    virtual ~Product() = default;
+    virtual ~IProduct() = default;
     virtual std::string operation() const = 0;
 };  
 
-class ConcreteProductA : public Product {
+class ConcreteProductA : public IProduct {
 public:
     std::string operation() const override {
         return "Result of ConcreteProductA";
     }
 };
 
-class ConcreteProductB : public Product {
+class ConcreteProductB : public IProduct {
 public:
     std::string operation() const override {
         return "Result of ConcreteProductB";
@@ -111,7 +111,7 @@ public:
         PRODUCT_B
     };
 
-    static std::unique_ptr<Product> createProduct(ProductType type) {
+    static std::unique_ptr<IProduct> createProduct(ProductType type) {
         switch (type) {
             case ProductType::PRODUCT_A:
                 return std::make_unique<ConcreteProductA>();
