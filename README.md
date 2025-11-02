@@ -5,8 +5,8 @@ Creational Design Pattern -
 1. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/Singleton.hpp">Singleton</a>
 2. Builder
 3. Prototype
-4. Factory
-5. Abstract Factory
+4. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/factory.hpp">Factory</a>
+5. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/abstractfactory.hpp">Abstract Factory</a>
 6. Dependency Injection Pattern.
 
 Structural Design Patterns
@@ -34,24 +34,48 @@ Behavioral Design Pattern
 <h3>Creational Patterns</h3>
 <b>Singleton</b>: Use when you need to ensure that only one instance of a class exists throughout the system.
 
-<b>Factory</b>: Use when you want to create objects but defer the instantiation to subclasses, which helps encapsulate creation logic.
+builder:
 
 <b>Prototype</b>: Use when object creation is complex or costly, as it allows you to create new objects by copying an existing one.
 
-<h3>Structural Patterns</h3>
-<b>Decorator</b>: for dynamically adding responsibilities to objects without altering their original interface.
+<b>Factory</b>: Use when you want to create objects but defer the instantiation to subclasses, which helps encapsulate creation logic.
 
+<b>AbstractFactory</b>: Use when you want to create Abstract Factory creates families of related objects
+
+Dependency Injection:
+
+<h3>Structural Patterns</h3>
 <b>Adapter</b>: for adapting an object's interface to be compatible with a client that expects a different one.
+
+Bridge
 
 <b>Composite</b>: for representing a part-whole hierarchy where you need to treat individual objects and compositions of objects uniformly.
 
-<b>Strategy</b>: when you want to swap out an algorithm at runtime, which is a different concept than adding behavior to an object.
+<b>Decorator</b>: for dynamically adding responsibilities to objects without altering their original interface.
 
 <b>Facade</b>: to provide a simpler, single-point entry into a complex subsystem.
 
+Proxy
+
+Flyweight
+
+
+
 <h3>Behavioral Patterns</h3>
-<b>Strategy</b>: Use when you have multiple algorithms that can perform the same task and you want to allow the client to choose one at runtime.
+Chain of responsibility
+
+Command
+
+Iterator
+
+Mediator
+
+Memento
 
 <b>Observer</b>: Use to establish a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
 <b>State</b>: Use when an object's behavior needs to change based on its internal state, allowing the object to change its behavior without altering its class.
+
+<b>Strategy</b>: when you want to swap out an algorithm at runtime, which is a different concept than adding behavior to an object.
+
+Visitor
