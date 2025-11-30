@@ -3,7 +3,7 @@ How to code each design pattern in C++ language.
 
 Creational Design Pattern - 
 1. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/Singleton.hpp">Singleton</a>
-2. Builder
+2. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/Builder.hpp">Builder</a>
 3. Prototype
 4. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/factory.hpp">Factory</a>
 5. <a href="https://github.com/kumarvoman/Design-Patterns/blob/main/abstractfactory.hpp">Abstract Factory</a>
